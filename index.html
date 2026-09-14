@@ -296,6 +296,17 @@
       text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     }
 
+    .waitlist-note {
+      max-width: 520px;
+      margin: -8px auto 24px;
+      padding: 0 16px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      line-height: 1.55;
+      color: rgba(245, 245, 245, 0.78);
+      text-align: center;
+    }
+
 
     @keyframes glowPulse {
       from {
@@ -933,13 +944,25 @@
       --plaque-glow: rgba(196, 150, 90, 0.28);
       --logo-size: 250px;
       --logo-height: 100px;
-      padding: 20px 56px 0;
+      padding: 28px 72px 0;
     }
 
     .terrarium-shelf--ironwood .terrarium-shelf-items {
       align-items: center;
-      gap: 48px 72px;
-      padding-bottom: 18px;
+      gap: 48px 80px;
+      padding-bottom: 24px;
+    }
+
+    .terrarium-shelf--ironwood .sponsor-cloche-logo {
+      width: var(--logo-size);
+      height: var(--logo-height);
+    }
+
+    .terrarium-shelf--ironwood .sponsor-cloche-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
     }
 
     .terrarium-shelf--birch {
@@ -1180,12 +1203,12 @@
       .terrarium-shelf--ironwood {
         --logo-size: 185px;
         --logo-height: 74px;
-        padding: 16px 24px 0;
+        padding: 22px 32px 0;
       }
 
       .terrarium-shelf--ironwood .terrarium-shelf-items {
-        gap: 32px 44px;
-        padding-bottom: 14px;
+        gap: 32px 48px;
+        padding-bottom: 18px;
       }
 
       .terrarium-shelf--birch {
@@ -1954,7 +1977,8 @@
       <p class="subtitle">OCTOBER 3RD–4TH 2026</p>
 
 
-      <a href="https://forms.gle/PZKKMoxUKL4b5VdQA" class="glow-button" target="_blank">Register until September 13th!</a>
+      <a href="https://forms.gle/HXwtkDDoNaG6ETRp6" class="glow-button" target="_blank" rel="noopener noreferrer">Join the Waitlist!</a>
+      <p class="waitlist-note">Registration is now closed but we encourage you to join the waitlist in case a spot opens up closer to the event!</p>
 
       </div>
 
@@ -2090,7 +2114,7 @@
               </div>
             </a>
 
-            <a class="sponsor-cloche sponsor-cloche--judi" href="https://www.judi.health/" target="_blank" rel="noopener noreferrer" aria-label="Judi Health, Ironwood sponsor">
+            <a class="sponsor-cloche" href="https://www.judi.health/" target="_blank" rel="noopener noreferrer" aria-label="Judi Health, Ironwood sponsor">
               <div class="sponsor-cloche-logo">
                 <img src="assets/Judi-Health_Gradient.png" alt="Judi Health" />
               </div>
